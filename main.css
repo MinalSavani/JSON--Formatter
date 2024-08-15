@@ -1,53 +1,87 @@
-body{
-    margin:0;
-    background:#333333;
-  }
-  .container{
-    display:grid;
-    grid-template-columns:1fr 100px 1fr;
-    align-items:center;
-    height:100vh;
-    box-sizing:border-box;
-    padding:20px;
-    gap:20px;
-  }
-  .large-area{
-    height:100%;
-    padding:20px;
-    box-sizing:border-box;
-    color:#aaaaaa;
-    background:#444444;
-    border:none;
-    border-radius:10px;
-    outline:none;
-    resize:none;
-    font-family:monospace;
-    transition:background 0.25s,color 0.25s;
-  
-  }
-  .large-area:hover,
-  .large-area:focus{
-    background:#4a4a4a;
-  }
-  .large-area:focus{
-    color:#eeeeee;
-  
-  }
-  .controls__button{
-    padding:8px 14px;
-    width:100%;
-    margin-bottom:10px;
-    border-radius:5px;
-    outline:none;
-    border:none;
-    cursor:pointer;
-    background: #009578;
-    color:#ffffff;
-    font-weight:bold;
-  
-  
-  }
-  .controls__button:active{
-    background: #00705a;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+  margin: 0;
+  background: #ffffff;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 20px;
+}
+
+.large-area {
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #aaaaaa;
+  background: #444444;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+  font-family: monospace;
+  transition: background 0.25s, color 0.25s;
+}
+
+.large-area:hover,
+.large-area:focus {
+  background: #4a4a4a;
+}
+
+.large-area:focus {
+  color: #eeeeee;
+}
+
+.controls__button {
+  /* font-family: monospace; */
+  font-family: 'Space Mono';
+  padding: 8px 14px;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #cc0066;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.controls__button:active {
+  background: #aa0055;
+}
+
+.intro {
+  /* opacity: 0.2; */
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+
+  /* common props */
+
+  font-family: 'Space Mono';
+  font-size: 16px;
+  background-color: #cc0066;
+  padding: 10px 25px;
+  border-radius: 100px;
+  font-weight: 600;
+  color: white;
+}
+
+.intro code {
+  padding: 5px 8px;
+  border-radius: 18px;
+  background-color: #f8f9f9;
+  color: #cc0066;
+}

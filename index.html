@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Json formatter</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Json formatter</title>
+  <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <div class="container">
-    
-        <textarea class="large-area large-area--input" placeholder="Enter your json here....">
-            {"name":"Dom"}
-        </textarea>
-        <div class="controls">
-            <button type="button" class="controls__button controls__button--format">Format</button>
-            <button type="button" class="controls__button controls__button--minify">Minify</button>
-        </div>
-        <textarea  readonly class="large-area large-area--output" placeholder="your json will apperar here...."></textarea>
+  <div class="container">
+
+    <textarea class="large-area large-area--input" placeholder="Enter your json here....">
+      {"Key":"Value"}
+    </textarea>
+
+    <div class="controls">
+      <button type="button" class="controls__button controls__button--format">Format</button>
+      <button type="button" class="controls__button controls__button--minify">Minify</button>
     </div>
-    <script src="main.js" defer></script>
+
+    <textarea readonly class="large-area large-area--output" placeholder="your json will apperar here...."></textarea>
+
+    <p class="intro">JSON Formatter Made by <code> @MinalSavani </code> </p>
+  </div>
+  <script src="main.js" defer></script>
 </body>
+
 </html>
